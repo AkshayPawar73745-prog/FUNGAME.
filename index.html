@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUNGAME</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      transition: 0.4s;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .card:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.2);
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 FUN BY STUDENTS</h1>
+  <div class="container">
+    <div class="card">
+      <a href="calculator.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Calculator">
+        <div>Calculator</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="flappy.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Flappy Bird">
+        <div>Flappy Bird</div>
+      </a>
+    </div>
+  </div>
+  <footer>© PROJECT BY AKSHAY</footer>
+</body>
+</html>
