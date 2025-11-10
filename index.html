@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Game Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUNGAME</title></title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #28313B, #485461);
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
       color: white;
       text-align: center;
-    }
-    .game {
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 350px;
-      background-size: cover;
-      background-position: center;
-      color: white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    }
-    .game h3 {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      font-size: 24px;
+      align-items: center;
+      height: 100vh;
     }
-    .game h3 i {
-      margin-right: 10px;
-      font-size: 28px;
-      color: #00B4DB;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      transition: 0.4s;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .card:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.2);
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #ccc;
     }
   </style>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  
-  <div class="game" id="flappyGame" style="background-image: url('flappy-background.jpg');">
-    <h3><i class="fas fa-dove"></i> Flappy Bird Game</h3>
-    <button onclick="location.href='flappybird.html'">Play</button>
+  <h1>🎮 FUNGAME MADE FOR FUN </h1>
+  <div class="container">
+    <div class="card">
+      <a href="calculator.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Calculator">
+        <div>Calculator</div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="flappy.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Flappy Bird">
+        <div>Flappy Bird</div>
+      </a>
+    </div>
   </div>
-  
-  <div class="game" id="calculatorGame" style="background-image: url('calculator-background.jpg');">
-    <h3><i class="fas fa-calculator"></i> Stylish Calculator</h3>
-    <button onclick="location.href='calculator.html'">Play</button>
-  </div>
-
+  <footer>© PROJECT BY AKSHAY </footer>
 </body>
 </html>
